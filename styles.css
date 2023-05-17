@@ -1,7 +1,12 @@
+body {
+  background-color: #969696;
+  margin: 10;
+}
+
+
 .slidecontainer {
     width: 100%; /* Width of the outside container */
   }
-  
   /* The slider itself */
   .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -36,3 +41,13 @@
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+.label {
+  text-align: center;
+  background: #d3d3d3;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#myCanvas {
+  background-color: black;
+  color: #04AA6D;
+}

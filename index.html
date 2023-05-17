@@ -7,12 +7,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body onload="onload()">
-    <!-- <div class="slidecontainer">
-        <input type="range" min="1" max="50" value="11" class="slider" id="myRange">
-    </div> -->
-    <input id="myRange">
-    <button onclick="button()">yes</button>
+    <label class="label">Wavelenth</label>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="10" class="slider" id="myRange" oninput="button()">
+    </div>
+    <label class="label">Amplitude</label>
+    <div class="slidecontainer">
+        <input type="range" min="80" max="200" value="120" class="slider" id="intrange" oninput="button()">
+    </div>
     <canvas id="myCanvas" width="800" height="360" style="border:1px solid #d3d3d3;">
-
 </body>
 </html>
