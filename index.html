@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Wave Project</title>
     <link rel="stylesheet" href="styles.css"></link>
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
-<body onload="onload()">
-    <label class="label">Wavelenth</label>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="20" value="10" class="slider" id="myRange" oninput="button()">
-    </div>
-    <label class="label">Amplitude</label>
-    <div class="slidecontainer">
-        <input type="range" min="80" max="200" value="120" class="slider" id="intrange" oninput="button()">
+<body onload="onload()" ontimeupdate="timeupdate()">
+    <div class="data">
+        <h2 class="label" id="wavetype"></h2>
+        <label class="label">Frequency</label>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="20" value="10" class="slider" id="myRange" oninput="button()">
+        </div>
+        <label class="label">Amplitude</label>
+        <div class="slidecontainer">
+            <input type="range" min="80" max="200" value="120" class="slider" id="intrange" oninput="button()">
+        </div>
     </div>
     <canvas id="myCanvas" width="800" height="360" style="border:1px solid #d3d3d3;">
+
 </body>
 </html>

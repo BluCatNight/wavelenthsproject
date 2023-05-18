@@ -6,16 +6,17 @@ body {
 
 .slidecontainer {
     width: 100%; /* Width of the outside container */
+    margin: 5px;
   }
   /* The slider itself */
   .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 200px; /* Full-width */
     height: 25px; /* Specified height */
     background: #d3d3d3; /* Grey background */
     outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
   }
@@ -29,25 +30,35 @@ body {
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    border-radius: 5px;
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
   
   .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    border-radius: 5px;
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
 .label {
-  text-align: center;
+  width: 200px;
+  text-align: left;
   background: #d3d3d3;
   font-family: 'Courier New', Courier, monospace;
+  padding: 3px;
+  margin: 5px;
 }
 
 #myCanvas {
   background-color: black;
-  color: #04AA6D;
+  border-radius: 5px;
+}
+
+.data {
+  float: right;
 }
